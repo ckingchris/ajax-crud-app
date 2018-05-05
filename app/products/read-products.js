@@ -14,7 +14,7 @@ $(document).ready(function(){
 function showProducts() {
 
     // get list of products from the API
-    $.getJSON("http://localhost/api/product/read.php", function(data){
+    $.getJSON("http://localhost/ajax-crud-app/api/product/read.php", function(data){
         // html for listing products
         var read_products_html="";
         
