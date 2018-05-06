@@ -28,7 +28,7 @@ $(document).ready(function(){
 
             // 'create product' html form
             create_product_html+="<form id='create-product-form' action='#' method='post' border='0'>";
-                create_product_html+="<table class='table table-hover table-responsive table-bordered'>";
+                create_product_html+="<table class='table table-hover table-bordered'>";
 
                     // name field
                     create_product_html+="<tr>";
