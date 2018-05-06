@@ -50,7 +50,7 @@ $(document).ready(function(){
             $("#page-content").html(read_one_product_html);
             
             // chage page title
-            changePageTitle("Create Product");
+            changePageTitle("View Products");
 
         });
 

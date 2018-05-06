@@ -23,7 +23,7 @@ $(document).ready(function(){
             
             // 'read products' button to show list of products
             create_product_html+="<div id='read-products' class='btn btn-primary pull-right m-b-15px read-products-button'>";
-            create_product_html+="<span class='glyphicon glyphicon-list'></span> Read Products";
+                create_product_html+="<span class='glyphicon glyphicon-list'></span> Read Products";
             create_product_html+="</div>";
 
             // 'create product' html form

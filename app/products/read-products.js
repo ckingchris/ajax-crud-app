@@ -73,7 +73,7 @@ function showProducts() {
         $("#page-content").html(read_products_html);
 
         // chage page title
-        changePageTitle("Read Products");
+        changePageTitle("Products");
 
     });
 
