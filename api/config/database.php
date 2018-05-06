@@ -2,10 +2,10 @@
     class Database{
     
         // specify your own database credentials
-        private $host = "umabrisfx8afs3ja.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-        private $db_name = "piy0ptxjohs8xchg";
-        private $username = "s4n38yn0hfpf4ivn";
-        private $password = "aykupehre4mhh1he";
+        private $host = "ocvwlym0zv3tcn68.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+        private $db_name = "m2ulg7boksqwcjf7";
+        private $username = "da9sx2kn1o98wmf0";
+        private $password = "butskwtvaoca51fo";
         public $conn;
     
         // get the database connection
