@@ -22,9 +22,9 @@ $(document).ready(function(){
             var create_product_html="";
             
             // 'read products' button to show list of products
-            create_product_html+="<div id='read-products' class='btn btn-primary pull-right m-b-15px read-products-button'>";
-                create_product_html+="<span class='glyphicon glyphicon-list'></span> Read Products";
-            create_product_html+="</div>";
+            // create_product_html+="<div id='read-products' class='btn btn-primary pull-right m-b-15px read-products-button'>";
+            //     create_product_html+="<span class='glyphicon glyphicon-list'></span> Read Products";
+            // create_product_html+="</div>";
 
             // 'create product' html form
             create_product_html+="<form id='create-product-form' action='#' method='post' border='0'>";
@@ -58,7 +58,7 @@ $(document).ready(function(){
                     create_product_html+="<tr>";
                         create_product_html+="<td></td>";
                         create_product_html+="<td>";
-                            create_product_html+="<button type='submit' class='btn btn-primary'>";
+                            create_product_html+="<button type='submit' class='btn btn-info'>";
                                 create_product_html+="<span class='glyphicon glyphicon-plus'></span> Create Product";
                             create_product_html+="</button>";
                         create_product_html+="</td>";

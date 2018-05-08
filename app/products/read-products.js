@@ -19,20 +19,22 @@ function showProducts() {
         var read_products_html="";
         
         // when clicked, it will load the create product form
-        read_products_html+="<div id='create-product' class='btn btn-primary pull-right m-b-15px create-product-button'>";
-            read_products_html+="<span class='glyphicon glyphicon-plus'></span> Create Product";
-        read_products_html+="</div>";
+        // read_products_html+="<div id='create-product' class='btn btn-outline-info create-product-button'>";
+        //     read_products_html+="<span class='glyphicon glyphicon-plus'></span> Create Product";
+        // read_products_html+="</div>";
 
         // start table
-        read_products_html+="<table class='table table-bordered table-hover'>";
+        read_products_html+="<table class='table table-hover'>";
         
             // creating our table heading
-            read_products_html+="<tr>";
-                read_products_html+="<th class='w-25-pct'>Name</th>";
-                read_products_html+="<th class='w-10-pct'>Price</th>";
-                read_products_html+="<th class='w-15-pct'>Category</th>";
-                read_products_html+="<th class='w-25-pct text-align-center'>Action</th>";
-            read_products_html+="</tr>";
+            read_products_html+="<thead class='thead-dark'>";
+                read_products_html+="<tr>";
+                    read_products_html+="<th class='w-25-pct'>Name</th>";
+                    read_products_html+="<th class='w-10-pct'>Price</th>";
+                    read_products_html+="<th class='w-15-pct'>Category</th>";
+                    read_products_html+="<th class='w-25-pct text-align-center'>Action</th>";
+                read_products_html+="</tr>";
+            read_products_html+="</thead>";
             
             // rows will be here
             // loop through returned list of data
@@ -47,20 +49,23 @@ function showProducts() {
     
                     // 'action' buttons
                     read_products_html+="<td>";
-                        // read one product button
-                        read_products_html+="<button class='btn btn-primary m-r-10px read-one-product-button' data-id='" + val.id + "'>";
-                            read_products_html+="<span class='glyphicon glyphicon-eye-open'></span> Read";
-                        read_products_html+="</button>";
-            
-                        // edit button
-                        read_products_html+="<button class='btn btn-info m-r-10px update-product-button' data-id='" + val.id + "'>";
-                            read_products_html+="<span class='glyphicon glyphicon-edit'></span> Edit";
-                        read_products_html+="</button>";
-            
-                        // delete button
-                        read_products_html+="<button class='btn btn-danger delete-product-button' data-id='" + val.id + "'>";
-                            read_products_html+="<span class='glyphicon glyphicon-remove'></span> Delete";
-                        read_products_html+="</button>";
+                    
+                        read_products_html+="<div class='btn-group' role='group' aria-label='Basic example'>";
+                            // read one product button
+                            read_products_html+="<button type='button' class='btn btn-outline-info read-one-product-button' data-id='" + val.id + "'>";
+                                read_products_html+="<span class='glyphicon glyphicon-eye-open'></span> Read";
+                            read_products_html+="</button>";
+                
+                            // edit button
+                            read_products_html+="<button type='button' class='btn btn-outline-info update-product-button' data-id='" + val.id + "'>";
+                                read_products_html+="<span class='glyphicon glyphicon-edit'></span> Edit";
+                            read_products_html+="</button>";
+                
+                            // delete button
+                            read_products_html+="<button type='button' class='btn btn-outline-info delete-product-button' data-id='" + val.id + "'>";
+                                read_products_html+="<span class='glyphicon glyphicon-remove'></span> Delete";
+                            read_products_html+="</button>";
+                        read_products_html+="</div>";
                     read_products_html+="</td>";
     
                 read_products_html+="</tr>";

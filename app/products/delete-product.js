@@ -13,11 +13,11 @@ $(document).ready(function(){
             buttons: {
                 confirm: {
                     label: '<span class="glyphicon glyphicon-ok"></span> Yes',
-                    className: 'btn-danger'
+                    className: 'btn-success'
                 },
                 cancel: {
                     label: '<span class="glyphicon glyphicon-remove"></span> No',
-                    className: 'btn-primary'
+                    className: 'btn-danger'
                 }
             },
             callback: function (result) {

@@ -32,7 +32,12 @@
 .margin-bottom-1em { margin-bottom:1em; }
 .margin-zero{ margin:0; }
 .text-align-center{ text-align:center; }
-#app-wrapper {
-    max-width: 800px;
-    margin-top: 10px; }
+#app-wrapper { margin-top: 5px; }
 .navbar { padding: .5rem 2.5rem; }
+.btn-group {
+    width: 100%;
+    text-align: center;
+    display: block; }
+.nav-btn { margin-right: 8px; }
+h1 { font-size: 1.5rem; }
+th { font-weight: 400; }
