@@ -50,7 +50,7 @@ $(document).ready(function(){
                 // build 'update product' html form
                 // we used the 'required' html5 property to prevent empty fields
                 update_product_html+="<form id='update-product-form' action='#' method='post' border='0'>";
-                    update_product_html+="<table class='table table-hover table-bordered'>";
+                    update_product_html+="<table class='table table-hover'>";
 
                         // name field
                         update_product_html+="<tr>";
