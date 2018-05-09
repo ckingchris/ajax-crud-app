@@ -26,7 +26,7 @@ $(document).ready(function(){
  
                     // send delete request to api / remote server
                     $.ajax({
-                        url: "/ajax-crud-app/api/product/delete.php",
+                        url: "http://localhost/ajax-crud-app/api/product/delete.php",
                         type : "POST",
                         dataType : 'json',
                         data : JSON.stringify({ id: product_id }),

@@ -18,7 +18,7 @@ $(document).ready(function(){
             
             // load list of categories will be here
             // load list of categories
-            $.getJSON("/ajax-crud-app/api/category/read.php", function(data){
+            $.getJSON("http://localhost/ajax-crud-app/api/category/read.php", function(data){
             
                 // build 'categories option' html
                 // loop through returned list of data
