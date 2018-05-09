@@ -7,7 +7,7 @@ $(document).ready(function(){
         var id = $(this).attr('data-id');
 
         // read one record based on given product id
-        $.getJSON("http://localhost/ajax-crud-app/api/product/read_one.php?id=" + id, function(data){
+        $.getJSON("/api/product/read_one.php?id=" + id, function(data){
         
             // values will be used to fill out our form
             var name = data.name;
@@ -18,7 +18,7 @@ $(document).ready(function(){
             
             // load list of categories will be here
             // load list of categories
-            $.getJSON("http://localhost/ajax-crud-app/api/category/read.php", function(data){
+            $.getJSON("/api/category/read.php", function(data){
             
                 // build 'categories option' html
                 // loop through returned list of data

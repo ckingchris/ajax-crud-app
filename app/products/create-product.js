@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(document).on('click', '.create-product-button', function(){
         // categories api call will be here
         // load list of categories
-        $.getJSON("http://localhost/ajax-crud-app/api/category/read.php", function(data){
+        $.getJSON("/api/category/read.php", function(data){
             // build categories option html
             // loop through returned list of data
             var categories_options_html="";
@@ -85,7 +85,7 @@ $(document).ready(function(){
 
         // submit form data to api
         $.ajax({
-            url: "http://localhost/ajax-crud-app/api/product/create.php",
+            url: "/api/product/create.php",
             type : "POST",
             contentType : 'application/json',
             data : form_data,
