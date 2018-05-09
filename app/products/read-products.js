@@ -14,14 +14,14 @@ $(document).ready(function(){
 function showProducts() {
 
     // get list of products from the API
-    $.getJSON("/api/product/read.php", function(data){
+    $.getJSON("../api/product/read.php", function(data){
         // html for listing products
         var read_products_html="";
         
         // when clicked, it will load the create product form
         // read_products_html+="<div id='create-product' class='btn btn-outline-info create-product-button'>";
         //     read_products_html+="<span class='glyphicon glyphicon-plus'></span> Create Product";
-        // read_products_html+="</div>";
+        // read_products_html+="<div>";
 
         // start table
         read_products_html+="<table class='table table-hover'>";
