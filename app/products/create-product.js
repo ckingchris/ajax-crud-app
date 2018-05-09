@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(document).on('click', '.create-product-button', function(){
         // categories api call will be here
         // load list of categories
-        $.getJSON("http://localhost/ajax-crud-app/api/category/read.php", function(data){
+        $.getJSON("/ajax-crud-app/api/category/read.php", function(data){
             // build categories option html
             // loop through returned list of data
             var categories_options_html="";
