@@ -1,3 +1,4 @@
+body { background-color: #17a2b8; }
 .m-r-10px{ margin-right:10px; }
 .m-b-10px{ margin-bottom:10px; }
 .m-b-15px{ margin-bottom:15px; }
@@ -32,12 +33,23 @@
 .margin-bottom-1em { margin-bottom:1em; }
 .margin-zero{ margin:0; }
 .text-align-center{ text-align:center; }
-#app-wrapper { margin-top: 5px; }
+#page-content { background-color: white; }
+#app-wrapper { width: 100% !important;
+    max-width: 100% !important;
+    padding: 8px 40px !important; }
 .navbar { padding: .5rem 2.5rem; }
 .btn-group {
     width: 100%;
-    text-align: center;
+    text-align: right;
     display: block; }
 .nav-btn { margin-right: 8px; }
 h1 { font-size: 1.5rem; }
 th { font-weight: 400; }
+
+@media (max-width:600px) {
+    #app-wrapper { width: 100% !important;
+        max-width: 100% !important;
+        padding: 8px 0px !important; }
+    .navbar { padding: .5rem .5rem; }
+    #page-title { padding-left: .5rem; }  
+}

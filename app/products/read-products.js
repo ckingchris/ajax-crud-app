@@ -14,7 +14,7 @@ $(document).ready(function(){
 function showProducts() {
 
     // get list of products from the API
-    $.getJSON("http://localhost/ajax-crud-app/api/product/read.php", function(data){
+    $.getJSON("/ajax-crud-app/api/product/read.php", function(data){
         // html for listing products
         var read_products_html="";
         
@@ -32,7 +32,7 @@ function showProducts() {
                     read_products_html+="<th class='w-25-pct'>Name</th>";
                     read_products_html+="<th class='w-10-pct'>Price</th>";
                     read_products_html+="<th class='w-15-pct'>Category</th>";
-                    read_products_html+="<th class='w-25-pct text-align-center'>Action</th>";
+                    read_products_html+="<th class='w-25-pct text-align-center'></th>";
                 read_products_html+="</tr>";
             read_products_html+="</thead>";
             
