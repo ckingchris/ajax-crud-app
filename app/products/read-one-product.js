@@ -7,7 +7,7 @@ $(document).ready(function(){
         var id = $(this).attr('data-id');
 
         // read product record based on given ID
-        $.getJSON("../api/product/read_one.php?id=" + id, function(data){
+        $.getJSON("/ajax-crud-app/api/product/read_one.php?id=" + id, function(data){
             // read products button will be here
             // start html
             var read_one_product_html="";
